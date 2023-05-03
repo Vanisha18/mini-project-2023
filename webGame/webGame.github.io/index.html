@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function openTkinterFile(filename) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "/open_tkinter_file/" + filename, true);
+		xhr.send();
+	}
+</script>
+
+
+</head>
+<body>
+
+
+
+<div class="container">
+    <img src="game.jpg" alt="" class="img_heading" >
+    <div class="heading">
+        <h1>Gaming Website</h1>
+    </div>   
+</div>
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About Games</a>
+  <a href="#">About us</a>
+</nav>
+<div class ="game-section">
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="quiz.jpg"  style="width:300px;height:200px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Quiz Time</h1>
+          <p>Test your general knowledge</p>
+          <button onclick="openTkinterFile('quiz.py')">PlayNow</button>
+        </div>
+      </div>
+  </div>
+  <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="tic.png"  style="width:300px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>TIC TAC TOE</h1>
+            <p>Test your Skills</p>
+            <button onclick="openTkinterFile('TIC-TAC-TOE.py')">Play Now</button>
+          </div>
+        </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="stone.jfif"  style="width:300px;height:200px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Stone Paper Scissor</h1>
+          <p>Test your Skills</p>
+          <button onclick="openTkinterFile('rockpaper.py')">Play Now</button>
+        </div>
+      </div>
+  </div>
+</div>
+<div class ="game-section2">
+    
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="brick.jpg"  style="width:300px;height:200px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Brick Bracker</h1>
+          <p>Test your Skills</p>
+          <button onclick="openTkinterFile('brickBreaker.py')">Play Now</button>
+        </div>
+      </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="color.jfif"  style="width:300px;height:200px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Color change Guess</h1>
+        <p>Test your general knowledge</p>
+        <button onclick="openTkinterFile('colorGame.py')">Play Now</button>
+      </div>
+    </div>
+  </div>
+<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="snake.jpg"  style="width:300px;height:200px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Snake Game</h1>
+          <p>Test your Skills</p>
+          <button onclick="openTkinterFile('snake.py')">Play Now</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
